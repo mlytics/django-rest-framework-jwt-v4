@@ -18,7 +18,7 @@ def get_version(package):
         return re.search("__version__ = ['\"]([^'\"]+)['\"]", src).group(1)
 
 
-name = 'djangorestframework-jwt'
+name = 'djangorestframework-jwt-v4'
 version = get_version('rest_framework_jwt')
 package = 'rest_framework_jwt'
 description = 'JSON Web Token based authentication for Django REST framework'
@@ -85,7 +85,6 @@ setup(
     url=url,
     license=license,
     description=description,
-    long_description=read('README.rst'),
     author=author,
     author_email=author_email,
     packages=get_packages(package),
